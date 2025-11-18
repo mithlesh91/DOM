@@ -7,24 +7,26 @@ html, body{
     height: 100%;
     width: 100%;
 }
-
-h2{
-    margin-top: 20px;
-    font-size: 50px;
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
 }
-#ince{
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 20px;
-    background-color: teal;
+button{
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 10;
 }
-#dec{
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 20px;
-    background-color: orange;
-    color: white;
-    cursor: pointer;
+button:hover{
+    background-color: #b3003c;
 }
