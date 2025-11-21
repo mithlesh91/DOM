@@ -1,25 +1,16 @@
-let btn = document.querySelector("button");
-let h2 = document.querySelector("h2");
-let inner = document.querySelector("#inner");
+let heart = document.querySelector('#heart');
+let img = document.querySelector('img');
 
 
 
-let a = 0;
+img.addEventListener('dblclick', function() {
+    heart.style.opacity = '1';
+    heart.style.transform = 'translate(-50%, -50%) scale(1)';
 
-btn.addEventListener("click", function() {
+    console.log('double clicked');
 
-     btn.style.pointerEvents = "none";
-
-    let clear = setInterval(() => {
-        a++;
-        inner.style.width = a + "%";
-        h2.innerHTML = a + "%";
-    }, 100);
-
-    setTimeout(() => {
-        clearInterval(clear);
-        h2.innerHTML = "Download Complete";
-        btn.style.opacity = "0.5";
-    }, 10000 );
-
-})
+    setTimeout(function() {
+        heart.style.opacity = '0';
+        heart.style.transform = 'translate(-50%, -50%) scale(0)';
+    }, 1000);
+});
