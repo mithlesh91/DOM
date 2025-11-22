@@ -1,7 +1,8 @@
-let img = document.querySelector('img')
-let main = document.querySelector('main')
+let body = document.querySelector("body");
+let h2 = document.querySelector("h2");
+// let main = document.querySelector("main");
 
-main.addEventListener('mousemove',function(dent){
-    img.style.left = dent.clientX + 'px'
-    img.style.top = dent.clientY + 'px'
-})
+body.addEventListener('keydown', function(dets){
+    // h2.innerHTML = dets.code;
+    console.log(dets);
+});
